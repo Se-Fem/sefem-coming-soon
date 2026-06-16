@@ -4,8 +4,62 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <title>Se Fem? — Coming soon</title>
-  <meta name="description" content="Se Fem? — Coming soon." />
+  <title>Se Fem? · Eventi in Ticino</title>
+  <meta name="description"
+        content="Scopri eventi, concerti, spettacoli, sagre, fiere e attività in Ticino. Se Fem? è la community che ti aiuta a trovare sempre qualcosa da fare." />
+
+  <meta name="robots" content="index,follow,max-image-preview:large" />
+
+  <link rel="canonical" href="https://www.sefem.ch/" />
+
+  <meta name="theme-color" content="#000000">
+
+  <!-- Favicons -->
+  <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="shortcut icon" href="/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <meta name="apple-mobile-web-app-title" content="Se Fem?" />
+  <link rel="manifest" href="/site.webmanifest" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="it_CH">
+  <meta property="og:site_name" content="Se Fem?">
+  <meta property="og:title" content="Se Fem? · Eventi in Ticino">
+  <meta property="og:description"
+        content="Concerti, festival, spettacoli, sagre, fiere ed eventi in Ticino. Scopri cosa fare con Se Fem?">
+  <meta property="og:url" content="https://www.sefem.ch/">
+  <meta property="og:image" content="https://www.sefem.ch/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+
+  <!-- Twitter / X -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Se Fem? · Eventi in Ticino">
+  <meta name="twitter:description"
+        content="Scopri eventi, concerti, spettacoli, sagre e attività in Ticino.">
+  <meta name="twitter:image" content="https://www.sefem.ch/og-image.jpg">
+
+  <!-- Geo -->
+  <meta name="geo.region" content="CH-TI">
+  <meta name="geo.placename" content="Ticino">
+
+  <script type="application/ld+json">
+    {
+      "@context":"https://schema.org",
+      "@type":"Organization",
+      "name":"Se Fem?",
+      "url":"https://www.sefem.ch/",
+      "logo":"https://www.sefem.ch/web-app-manifest-512x512.png",
+      "sameAs":[
+        "https://www.instagram.com/sefem.ch/",
+        "https://www.facebook.com/sefem.ch",
+        "https://www.tiktok.com/@sefem.ch",
+        "https://www.threads.com/@sefem.ch"
+      ]
+    }
+  </script>
 
   <!-- Fonts: Lobster (brand) + Inter (body) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -21,6 +75,14 @@
       --ring: rgba(255,255,255,.14);
       --shadow: 0 18px 60px rgba(0,0,0,.45);
       --radius: 22px;
+
+      --sfem-red: #B90001;
+      --sfem-blue: #3D45F6;
+      --sfem-grad: linear-gradient(
+              90deg,
+              var(--sfem-red) 0%,
+              var(--sfem-blue) 100%
+      );
     }
 
     *{ box-sizing: border-box; }
@@ -56,17 +118,54 @@
 
     .brand{
       font-family: Lobster, cursive;
-      font-size: clamp(2.4rem, 6vw, 3.4rem);
-      letter-spacing: .3px;
+      font-size: clamp(3rem, 6vw, 3.4rem);
       margin: 4px 0 8px 0;
+      letter-spacing: .3px;
     }
 
     .subtitle{
-      margin: 0 auto;
-      color: var(--muted);
+      margin: 3rem auto 3rem;
+      color: var(--text);
       font-size: clamp(1rem, 2.2vw, 1.15rem);
-      line-height: 1.55;
       max-width: 46ch;
+    }
+
+    .seo-content{
+      max-width: 650px;
+      margin: 3rem auto 0;
+      text-align: center;
+    }
+
+    .brand-divider{
+      height: 1px;
+      margin: 1rem auto 1.25rem;
+      border: 0;
+      background: var(--sfem-grad);
+      opacity: .9;
+    }
+
+    .mt-8{
+      border-top: 1px solid var(--muted) ;
+      margin-top: 6rem;
+    }
+
+    h2{
+      font-size: 1.2rem;
+      font-weight: 200;
+      margin-bottom: 1rem;
+      text-transform: uppercase;
+      letter-spacing: 5px;
+    }
+
+    .seo-content p{
+      color: var(--muted);
+      line-height: 1.8;
+      margin: 0 0 1rem 0;
+      font-weight: 200;
+    }
+
+    .text-small{
+      font-size: .85rem;
     }
 
     .social{
@@ -101,6 +200,7 @@
       text-align: center;
       color: rgba(255,255,255,.55);
       font-size: .85rem;
+      padding: .5rem;
     }
 
     .sr-only{
@@ -124,10 +224,22 @@
     <img class="logo" src="sefem.svg" alt="Se Fem? logo" />
 
     <h1 class="brand">Se Fem?</h1>
+    <hr class="brand-divider">
+    <h2>Eventi in Ticino</h2>
+
     <p class="subtitle">
-      Stiamo lavorando a qualcosa di speciale ✨
-      <br><br>Seguici sui nostri social
+      In Ticino non c'è nulla da fare?
+      <br><br>
+      Ti dimostreremo il contrario.
+      <br><br>
+      Non arrivare all'ultimo.
     </p>
+
+    <section class="seo-content">
+      <p>
+        Seguici sui social e resta aggiornato sui prossimi eventi.
+      </p>
+    </section>
 
     <nav class="social" aria-label="Social Se Fem">
       <!-- Instagram -->
@@ -160,7 +272,29 @@
 
       </a>
     </nav>
+
+    <section class="seo-content mt-8">
+      <h2>La community degli eventi in Ticino</h2>
+
+      <p class="text-small">
+        Se Fem? nasce per sfatare un luogo comune:
+        <em>"In Ticino non c'è nulla da fare"</em>.
+      </p>
+
+      <p class="text-small">
+        Concerti, festival, spettacoli, sagre, fiere, mercatini e attività sul territorio:
+        raccontiamo ciò che accade in Ticino e aiutiamo le persone a scoprire sempre qualcosa da fare.
+      </p>
+
+      <p class="text-small">
+        Il sito completo è attualmente in sviluppo.
+        Nel frattempo, seguici sui social e <strong>non arrivare all'ultimo</strong>.
+      </p>
+    </section>
+
   </section>
+
+
 
   <footer>
     © 2026 Se Fem?

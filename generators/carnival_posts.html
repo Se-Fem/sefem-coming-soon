@@ -1,0 +1,725 @@
+<!doctype html>
+<html lang="it">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Se Fem? — Post Carnevali (Carousel)</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&family=Lobster&display=swap" rel="stylesheet">
+
+    <!-- html2canvas -->
+    <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
+
+    <style>
+        :root{
+            --shadow: 0 18px 40px rgba(0,0,0,.25);
+            --softShadow: 0 10px 22px rgba(0,0,0,.18);
+            --txtShadow: 0 5px 12px rgba(0,0,0,.55);
+
+            --bg1:#ff0030;
+            --bg2:#b0007a;
+            --bg3:#1a00ff;
+
+            --cardR: 12px;
+        }
+        *{box-sizing:border-box}
+        body{
+            margin:0;
+            font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+            background:#0b0b10;
+            color:#fff;
+        }
+
+        .app{
+            display:grid;
+            grid-template-columns: 420px 1fr;
+            gap:18px;
+            padding:18px;
+            min-height:100vh;
+        }
+
+        .panel{
+            background: rgba(255,255,255,.06);
+            border: 1px solid rgba(255,255,255,.12);
+            border-radius: 16px;
+            padding:14px;
+            box-shadow: var(--softShadow);
+        }
+        .panel h2{
+            margin:0 0 10px;
+            font-size:14px;
+            letter-spacing:.08em;
+            text-transform:uppercase;
+            opacity:.9;
+        }
+        .topbar{
+            display:flex; justify-content:space-between; align-items:center; gap:10px;
+            margin-bottom:10px;
+        }
+        .pill{
+            display:inline-flex;
+            gap:8px;
+            align-items:center;
+            padding:6px 10px;
+            border-radius:999px;
+            background: rgba(255,255,255,.10);
+            border:1px solid rgba(255,255,255,.16);
+            font-size:12px;
+        }
+        .row{display:flex; gap:10px; flex-wrap:wrap; align-items:center}
+        button{
+            cursor:pointer;
+            border:none;
+            border-radius: 12px;
+            padding:10px 12px;
+            font-weight:800;
+            font-family: Inter, sans-serif;
+            background:#fff;
+            color:#000;
+            box-shadow: var(--softShadow);
+        }
+        button.secondary{
+            background: rgba(255,255,255,.12);
+            color:#fff;
+            border:1px solid rgba(255,255,255,.18);
+            box-shadow:none;
+        }
+        button:disabled{opacity:.55; cursor:not-allowed}
+        input[type="file"]{
+            width:100%;
+            margin-top:10px;
+            padding:10px;
+            border-radius:12px;
+            border:1px dashed rgba(255,255,255,.2);
+            background: rgba(0,0,0,.20);
+            color:#fff;
+        }
+        .small{
+            font-size:12px;
+            opacity:.85;
+            margin-top:10px;
+            line-height:1.35;
+        }
+        .status{ margin-top:10px; font-size:12px; opacity:.9; }
+
+        /* Preview */
+        .previewWrap{
+            display:grid;
+            grid-template-columns: 1fr;
+            gap:18px;
+            align-content:start;
+        }
+        .sectionTitle{
+            margin:0 0 10px;
+            font-size:14px;
+            letter-spacing:.08em;
+            text-transform:uppercase;
+            opacity:.9;
+        }
+        .pages{
+            display:flex;
+            flex-direction:column;
+            gap:14px;
+        }
+        .pageItem{
+            display:flex;
+            flex-direction:column;
+            gap:8px;
+        }
+
+        /* POST surface 1080x1350 (4/5) */
+        .surface{
+            width: 360px; /* preview */
+            aspect-ratio: 4/5;
+            position:relative;
+            overflow:hidden;
+            background:
+                    radial-gradient(circle at 22% 25%, rgba(255,255,255,.16) 0%, rgba(255,255,255,0) 42%),
+                    linear-gradient(135deg, rgba(255,0,48,.55) 0%, rgba(176,0,122,.55) 45%, rgba(26,0,255,.55) 100%),
+                    center / cover no-repeat url("carnival_bg.png");
+        }
+
+        .inner{
+            position:absolute;
+            inset:0;
+            display:flex;
+            flex-direction:column;
+        }
+
+        .inner.cover{
+            position:absolute;
+            inset:0;
+            padding: 16px 16px;
+            display:flex;
+            flex-direction:column;
+            justify-content: center;
+        }
+
+        /* Cover */
+        .coverTop{
+            display:flex;
+            flex-direction:column;
+            align-items:center;
+            gap:6px;
+        }
+        .logoMark{
+            width: 54px;
+            height: 54px;
+            display:grid;
+            place-items:center;
+        }
+        .logoMark img{
+            width: 54px;
+            height: 54px;
+            object-fit: contain;
+            filter: drop-shadow(0 6px 12px rgba(0,0,0,.55));
+        }
+        .brandName{
+            font-family: Lobster, cursive;
+            font-size: 30px;
+            line-height: 1;
+            text-shadow: var(--txtShadow);
+            margin-bottom: 25px;
+        }
+
+        .coverTitle{
+            display: flex;
+            flex-direction: column;
+            text-align:center;
+            font-weight: 400;
+            font-size: 40px;
+            text-shadow: var(--txtShadow);
+            margin-top: 10px;
+            align-items: center;
+        }
+
+        .coverTitle span{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+
+        .coverTitle span b{
+            font-weight: 900;
+            font-size: 53px;
+        }
+
+
+        .coverRangeTitle{
+            text-align:center;
+            font-weight: 600;
+            font-size: 16px;
+            opacity:.96;
+            text-shadow: var(--txtShadow);
+            margin-top: 12px;
+        }
+
+        .coverRange{
+            text-align:center;
+            font-weight: 900;
+            font-size: 18px;
+            opacity:.96;
+            text-shadow: var(--txtShadow);
+            margin-top: 5px;
+        }
+
+        /* Cards grid (max 3) */
+        .cardsGrid{
+            flex:1;
+            min-height:0;
+            display:flex;
+            flex-direction:column;
+        }
+
+        /* Same "figa" card style as stories */
+        .cCard{
+            position:relative;
+            overflow:hidden;
+            border: 2px solid rgba(255,255,255,.14);
+            box-shadow: 0 16px 30px rgba(0,0,0,.25);
+            background: rgba(255,255,255,.08);
+            height: 150px;
+        }
+
+        .cBg{
+            position:absolute;
+            inset:0;
+            background-size: cover;
+            background-position: center;
+            transform: scale(1.03);
+            filter: saturate(1.05) contrast(1.05);
+        }
+
+        .cOverlay{
+            position:absolute;
+            inset:0;
+            background:
+                    linear-gradient(90deg, rgba(0,0,0,.65) 0%, rgba(0,0,0,.28) 55%, rgba(0,0,0,.06) 100%),
+                    linear-gradient(180deg, rgba(0,0,0,.35) 0%, rgba(0,0,0,.12) 45%, rgba(0,0,0,.42) 100%);
+        }
+
+        .cContent{
+            position:relative;
+            height:100%;
+            padding: 12px 12px;
+            display:flex;
+            flex-direction:column;
+            justify-content:flex-end;
+            gap: 6px;
+            color:#fff;
+        }
+
+        .cName{
+            font-weight: 800;
+            font-size: 20px;
+            line-height: 1.12;
+            text-shadow: var(--txtShadow);
+            max-width: 92%;
+        }
+        .cMetaRow{
+            display:flex;
+            flex-direction: column;
+            font-weight: 700;
+            font-size: 14px;
+            opacity:.95;
+            text-shadow: var(--txtShadow);
+            gap: 2px;
+        }
+
+        /* Watermark logo bottom-right (only pages with cards) */
+        .wmLogo{
+            position:absolute;
+            z-index: 10;
+            right: 14px;
+            bottom: 14px;
+            width: 34px;
+            height: 34px;
+            opacity: .35;
+            filter: drop-shadow(0 8px 14px rgba(0,0,0,.35));
+            pointer-events:none;
+            user-select:none;
+        }
+
+        .hint{font-size:12px; opacity:.85; margin-top:8px; line-height:1.35}
+    </style>
+</head>
+
+<body>
+<div class="app">
+
+    <div class="panel">
+        <div class="topbar">
+            <h2>Weeks JSON</h2>
+            <span class="pill" id="weekLabel">Nessuna settimana</span>
+        </div>
+
+        <div class="row">
+            <button id="loadDefaultBtn">Carica carnivals_weeks.json</button>
+            <button id="prevBtn" class="secondary" disabled>← Settimana</button>
+            <button id="nextBtn" class="secondary" disabled>Settimana →</button>
+        </div>
+
+        <input id="fileInput" type="file" accept="application/json" />
+
+        <div class="small">
+            Per ogni settimana genera:
+            <br>1) <b>Cover</b> (logo + titolo + periodo)
+            <br>2) <b>Pagine</b> (max 3 card full-image) + watermark logo in basso a destra
+        </div>
+
+        <div class="status" id="status"></div>
+
+
+        <div class="small" style="margin-top:12px; font-weight:800;">Caption (pronta da copiare)</div>
+
+        <textarea id="captionBox" readonly
+                  style="
+    width:100%;
+    min-height:180px;
+    resize:vertical;
+    border-radius:12px;
+    border:1px solid rgba(255,255,255,.16);
+    background: rgba(0,0,0,.25);
+    color:#fff;
+    padding:10px;
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono','Courier New', monospace;
+    font-size:12px;
+    line-height:1.35;
+    outline:none;
+  "></textarea>
+
+        <div class="row" style="margin-top:10px">
+            <button id="copyCaptionBtn" class="secondary" disabled>Copia caption</button>
+        </div>
+    </div>
+
+    <div class="previewWrap">
+        <div>
+            <h2 class="sectionTitle">Posts Carousel (1080×1350)</h2>
+            <div id="postsContainer" class="pages"></div>
+            <div class="hint">Carica su IG come carousel: cover → pagina 1 → pagina 2 …</div>
+        </div>
+    </div>
+
+</div>
+
+<script>
+    const $ = (id) => document.getElementById(id);
+
+    const BRAND = { name: "Se Fem?", logoUrl: "logo.png" };
+    const FIXED_TITLE_HTML = `In Ticino il <span>CARNE<b>VALE</b></span> 🎭`;
+
+    let weeksData = null;
+    let weekIndex = 0;
+
+    function setStatus(msg){ $("status").textContent = msg || ""; }
+
+    async function exportNodePNG(node, filename, outW, outH) {
+        const canvas = await html2canvas(node, {
+            backgroundColor: null,
+            useCORS: true,
+            scale: 3
+        });
+
+        const out = document.createElement("canvas");
+        out.width = outW;
+        out.height = outH;
+        const ctx = out.getContext("2d");
+        ctx.imageSmoothingEnabled = true;
+        ctx.imageSmoothingQuality = "high";
+        ctx.drawImage(canvas, 0, 0, outW, outH);
+
+        const link = document.createElement("a");
+        link.download = filename;
+        link.href = out.toDataURL("image/png");
+        link.click();
+    }
+
+    function slug(s){
+        return (s || "settimana")
+            .toString()
+            .replaceAll(" ", "")
+            .replaceAll(".", "")
+            .replaceAll("–","-")
+            .replaceAll("—","-")
+            .replaceAll("/","-")
+            .replaceAll("\\","-");
+    }
+
+    function formatDateText(c){
+        const from = (c.from || "").trim();
+        const to = (c.to || "").trim();
+
+        if (from && to && from !== to) return `Dal ${from} al ${to}`;
+        if (from && (!to || to === from)) return `Il ${from}`;
+        if (!from && to) return `Il ${to}`;
+        return "";
+    }
+
+    function placeholderBg(seedText){
+        const s = (seedText || "SeFem").split("").reduce((a,c)=>a + c.charCodeAt(0), 0);
+        const a = 30 + (s % 40);
+        const b = 55 + ((s*3) % 35);
+        return `linear-gradient(135deg,
+      rgba(255,255,255,.12) 0%,
+      rgba(0,0,0,.10) 40%,
+      rgba(255,255,255,.08) 100%),
+      radial-gradient(circle at ${a}% ${b}%,
+      rgba(255,255,255,.18) 0%,
+      rgba(255,255,255,0) 55%),
+      linear-gradient(135deg, rgba(255,0,48,.55) 0%, rgba(176,0,122,.55) 45%, rgba(26,0,255,.55) 100%)`;
+    }
+
+    function createCoverSurface(rangeText){
+        const surface = document.createElement("div");
+        surface.className = "surface";
+
+        surface.innerHTML = `
+      <div class="inner cover">
+        <div class="coverTop">
+          <div class="logoMark"><img alt="logo"></div>
+          <div class="brandName">${BRAND.name}</div>
+        </div>
+
+        <div class="coverTitle">${FIXED_TITLE_HTML}</div>
+        <div class="coverRangeTitle">Settimana</div>
+        <div class="coverRange">${rangeText || ""}</div>
+      </div>
+    `;
+
+        surface.querySelector(".logoMark img").src = BRAND.logoUrl;
+        return surface;
+    }
+
+    function makeCarnivalCard(c){
+        const card = document.createElement("div");
+        card.className = "cCard";
+
+        const bg = document.createElement("div");
+        bg.className = "cBg";
+
+        const img = (c.imageUrl || "").trim();
+        if (img) bg.style.backgroundImage = `url("${img}")`;
+        else bg.style.backgroundImage = placeholderBg(c.name || "");
+
+        const overlay = document.createElement("div");
+        overlay.className = "cOverlay";
+
+        const content = document.createElement("div");
+        content.className = "cContent";
+
+        const dateText = formatDateText(c);
+
+        content.innerHTML = `
+      <div class="cName">${c.name || ""}</div>
+      <div class="cMetaRow">
+        ${dateText ? `<span>${dateText}</span>` : ``}
+        ${c.zone ? `<span>${c.zone}</span>` : ``}
+      </div>
+    `;
+
+        card.appendChild(bg);
+        card.appendChild(overlay);
+        card.appendChild(content);
+        return card;
+    }
+
+    function createCardsSurface(rangeText, slice){
+        const surface = document.createElement("div");
+        surface.className = "surface";
+
+        surface.innerHTML = `
+      <img class="wmLogo" alt="wm" />
+      <div class="inner">
+        <div class="cardsGrid"></div>
+      </div>
+    `;
+
+        surface.querySelector(".wmLogo").src = BRAND.logoUrl;
+
+        const grid = surface.querySelector(".cardsGrid");
+        slice.forEach(c => grid.appendChild(makeCarnivalCard(c)));
+
+        return surface;
+    }
+
+    function createPageItem(surface, filenameBase, btnLabel="Scarica Post (PNG)"){
+        const wrapper = document.createElement("div");
+        wrapper.className = "pageItem";
+
+        const btn = document.createElement("button");
+        btn.className = "secondary";
+        btn.textContent = btnLabel;
+        btn.onclick = () => exportNodePNG(surface, `${filenameBase}.png`, 1080, 1350);
+
+        wrapper.appendChild(surface);
+        wrapper.appendChild(btn);
+        return wrapper;
+    }
+
+    function humanizeRange(rangeText){
+        // es: "12.01 – 18.01"
+        if (!rangeText) return "";
+
+        const clean = rangeText.replace("–", "-");
+        const [from, to] = clean.split("-").map(s => s.trim());
+
+        const f = parseDayMonth(from);
+        const t = parseDayMonth(to);
+
+        if (!f) return rangeText;
+
+        // stesso mese
+        if (t && f.month === t.month) {
+            return `${f.day}–${t.day} ${f.monthName}`;
+        }
+
+        // mesi diversi (raro ma gestito)
+        if (t) {
+            return `${f.day} ${f.monthName} – ${t.day} ${t.monthName}`;
+        }
+
+        return `${f.day} ${f.monthName}`;
+    }
+
+
+    function formatDateForCaption(c){
+        const f = parseDayMonth(c.from);
+        const t = parseDayMonth(c.to);
+
+        // giorno singolo
+        if (f && (!t || f.day === t.day && f.month === t.month)) {
+            return `${f.day} ${f.monthName}`;
+        }
+
+        // stesso mese
+        if (f && t && f.month === t.month) {
+            return `${f.day}–${t.day} ${f.monthName}`;
+        }
+
+        // mesi diversi
+        if (f && t) {
+            return `${f.day} ${f.monthName} – ${t.day} ${t.monthName}`;
+        }
+
+        return "";
+    }
+
+    const MONTHS_IT = [
+        "gen", "feb", "mar", "apr", "mag", "giu",
+        "lug", "ago", "set", "ott", "nov", "dic"
+    ];
+
+    function parseDayMonth(str){
+        // accetta "12.01" o "12-01"
+        if (!str) return null;
+        const [day, month] = str.replace("-", ".").split(".");
+        if (!day || !month) return null;
+        return {
+            day: parseInt(day, 10),
+            month: parseInt(month, 10),
+            monthName: MONTHS_IT[parseInt(month, 10) - 1]
+        };
+    }
+
+
+    function buildCaptionForWeek(w){
+        const range = humanizeRange(w.range || "");
+        const carnivals = Array.isArray(w.carnivals) ? w.carnivals : [];
+
+        const lines = [];
+        lines.push(`🎭 Carnevali in Ticino — settimana ${range}`);
+        lines.push("");
+        lines.push("Ecco quelli da non perdere 👇");
+
+        // elenco (tutti, ma puoi limitarli se vuoi)
+        carnivals.forEach(c => {
+            const d = formatDateForCaption(c);
+            const datePart = d ? ` ${d}` : "";
+            lines.push(`• ${c.name || ""}${datePart}`);
+        });
+
+        lines.push("");
+        lines.push("Ne manca qualcuno? Segnalacelo nei commenti o in DM 👇");
+        lines.push("");
+
+        // tag in fondo, uno per riga
+        const tags = carnivals.map(c => (c.tag || "").trim()).filter(Boolean);
+        if (tags.length){
+            lines.push(...tags);
+            lines.push("");
+        }
+
+        // max 5 hashtag (standard)
+        lines.push("#carnevale #ticino #eventiticino #cosedafareinticino #sefem");
+
+        return lines.join("\n");
+    }
+
+    async function copyToClipboard(text){
+        try{
+            await navigator.clipboard.writeText(text);
+            setStatus("✅ Caption copiata negli appunti.");
+        }catch(e){
+            // fallback
+            const box = $("captionBox");
+            box.removeAttribute("readonly");
+            box.select();
+            document.execCommand("copy");
+            box.setAttribute("readonly", "readonly");
+            setStatus("✅ Caption copiata (fallback).");
+        }
+    }
+
+
+    function renderWeek(){
+        if (!weeksData || !Array.isArray(weeksData.weeks) || weeksData.weeks.length === 0) return;
+
+        const w = weeksData.weeks[weekIndex];
+        const rangeText = w.range || "";
+        const carnivals = Array.isArray(w.carnivals) ? w.carnivals : [];
+
+        $("weekLabel").textContent = `${weekIndex+1}/${weeksData.weeks.length} · ${rangeText || "Settimana"}`;
+
+        const container = $("postsContainer");
+        container.innerHTML = "";
+
+        const CHUNK = 3;
+
+        // Cover
+        {
+            const cover = createCoverSurface(rangeText);
+            container.appendChild(createPageItem(cover, `sefem_post_${slug(rangeText)}_cover`, "Scarica Cover (PNG)"));
+        }
+
+        // Cards pages
+        for (let i = 0; i < carnivals.length; i += CHUNK) {
+            const slice = carnivals.slice(i, i + CHUNK);
+            const pageNo = (i/CHUNK) + 1;
+
+            const page = createCardsSurface(rangeText, slice);
+            container.appendChild(createPageItem(page, `sefem_post_${slug(rangeText)}_${pageNo}`));
+        }
+
+        $("prevBtn").disabled = (weekIndex === 0);
+        $("nextBtn").disabled = (weekIndex === weeksData.weeks.length - 1);
+
+        const caption = buildCaptionForWeek(w);
+        $("captionBox").value = caption;
+        $("copyCaptionBtn").disabled = false;
+
+        setStatus("✅ Render ok. Carousel post con card full-image.");
+    }
+
+    function loadFromObject(obj){
+        if (!obj || !Array.isArray(obj.weeks) || obj.weeks.length === 0) {
+            throw new Error("Formato non valido. Atteso: { \"weeks\": [ ... ] }");
+        }
+        weeksData = obj;
+        weekIndex = 0;
+        renderWeek();
+    }
+
+    async function loadDefaultWeeks(){
+        try{
+            setStatus("Caricamento carnivals_weeks.json...");
+            const res = await fetch("./carnivals_weeks.json", { cache: "no-store" });
+            if (!res.ok) throw new Error("Impossibile leggere carnivals_weeks.json (controlla path e server)");
+            const obj = await res.json();
+            loadFromObject(obj);
+            setStatus("✅ carnivals_weeks.json caricato.");
+        }catch(e){
+            setStatus("❌ " + e.message);
+            $("postsContainer").innerHTML = "";
+            $("weekLabel").textContent = "Nessuna settimana";
+        }
+    }
+
+    $("loadDefaultBtn").addEventListener("click", loadDefaultWeeks);
+    $("prevBtn").addEventListener("click", () => { if (weekIndex>0){ weekIndex--; renderWeek(); }});
+    $("nextBtn").addEventListener("click", () => { if (weeksData && weekIndex < weeksData.weeks.length-1){ weekIndex++; renderWeek(); }});
+
+    $("fileInput").addEventListener("change", async (e) => {
+        const file = e.target.files?.[0];
+        if (!file) return;
+        try{
+            const text = await file.text();
+            const obj = JSON.parse(text);
+            loadFromObject(obj);
+            setStatus("✅ File JSON caricato.");
+        }catch(err){
+            setStatus("❌ File JSON non valido: " + err.message);
+        }
+    });
+
+    $("copyCaptionBtn").addEventListener("click", () => {
+        copyToClipboard($("captionBox").value || "");
+    });
+
+    loadDefaultWeeks();
+</script>
+</body>
+</html>

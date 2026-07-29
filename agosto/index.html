@@ -70,8 +70,8 @@
     <div class="newsletter shell">
       <div class="newsletter-copy">
         <p class="newsletter-eyebrow">Non arrivare all’ultimo</p>
-        <h2 id="newsletterTitle">Il Ticino, prima che inizi.</h2>
-        <p class="newsletter-intro">Una selezione degli eventi da non perdere, direttamente nella tua email.</p>
+        <h2 id="newsletterTitle">Allora... Se Fem?</h2>
+        <p class="newsletter-intro">Noi gli eventi li troviamo. Tu devi solo decidere dove andare.</p>
       </div>
 
       <div class="newsletter-panel">
@@ -123,7 +123,7 @@
                 <svg class="icon clickable__icon progress-indicator__icon sib-hide-loader-icon" viewBox="0 0 512 512" aria-hidden="true">
                   <path d="M460.116 373.846l-20.823-12.022c-5.541-3.199-7.54-10.159-4.663-15.874 30.137-59.886 28.343-131.652-5.386-189.946-33.641-58.394-94.896-95.833-161.827-99.676C261.028 55.961 256 50.751 256 44.352V20.309c0-6.904 5.808-12.337 12.703-11.982 83.556 4.306 160.163 50.864 202.11 123.677 42.063 72.696 44.079 162.316 6.031 236.832-3.14 6.148-10.75 8.461-16.728 5.01z"/>
                 </svg>
-                Iscriviti alla newsletter
+                <span>Iscriviti alla newsletter</span>
               </button>
 
               <input type="text" name="email_address_check" value="" class="input--hidden" tabindex="-1" autocomplete="off">
@@ -135,7 +135,7 @@
     </div>
   </section>
 
-    <section class="featured shell" aria-labelledby="featured-title">
+    <section class="featured shell" id="featuredSection" aria-labelledby="featured-title">
       <div class="section-heading">
         <div>
           <p class="eyebrow">Scelti da noi</p>
@@ -164,8 +164,7 @@
           </label>
           <div class="chip-row" id="quickFilters">
             <button class="chip active" data-filter="upcoming" type="button">In corso e futuri</button>
-            <button class="chip" data-filter="meseXMese" type="button">Mese x MeSe</button>
-            <button class="chip" data-filter="selecta" type="button">Selecta</button>
+            <button class="chip" data-filter="featured" type="button">In evidenza</button>
             <button class="chip" data-filter="free" type="button">Gratis</button>
             <button class="chip" data-filter="past" type="button">Conclusi</button>
           </div>
@@ -173,10 +172,6 @@
             <label>
               <span>Categoria</span>
               <select id="categoryFilter"><option value="all">Tutte</option></select>
-            </label>
-            <label>
-              <span>Zona</span>
-              <select id="regionFilter"><option value="all">Tutto il Ticino</option></select>
             </label>
           </div>
         </div>

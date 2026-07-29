@@ -262,3 +262,64 @@ h1 span { font-family:Lobster,cursive; font-weight:400; letter-spacing:-.03em; b
   .newsletter { grid-template-columns: minmax(0, 1.05fr) minmax(330px, .95fr); gap: 48px; padding: 42px; }
   .newsletter-panel { padding: 28px; }
 }
+
+/* Landing semplificata */
+[hidden] { display: none !important; }
+
+.badge.featured-badge,
+.mini-badge.featured-badge { background: var(--red); }
+
+.badge.free-badge,
+.mini-badge.free-badge { background: #087a45; }
+
+.filters { grid-template-columns: minmax(260px, 1.4fr) auto minmax(170px, .55fr); }
+.select-row { grid-template-columns: 1fr; }
+
+/* Stato Brevo compatto: nessun elemento viene aggiunto sotto la form. */
+.newsletter-panel { position: relative; }
+.newsletter-brevo .sib-form-message-panel {
+  display: none;
+  margin: 0 0 14px;
+}
+.newsletter-brevo .sib-form-message-panel--active { display: block; }
+.newsletter-submit {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  overflow: hidden;
+}
+.newsletter-submit .progress-indicator__icon {
+  position: static !important;
+  flex: 0 0 17px;
+  width: 17px !important;
+  height: 17px !important;
+  margin: 0 !important;
+  fill: currentColor;
+}
+.newsletter-submit .sib-hide-loader-icon { display: none !important; }
+.newsletter-submit:disabled { cursor: wait; opacity: .82; }
+.newsletter-submit:not(:disabled) .progress-indicator__icon { display: none !important; }
+.newsletter-submit:disabled .progress-indicator__icon {
+  display: block !important;
+  animation: newsletter-spin .8s linear infinite;
+}
+.newsletter-submit:disabled span { opacity: .9; }
+@keyframes newsletter-spin { to { transform: rotate(360deg); } }
+
+/* Brevo può inserire il loader globale: lo neutralizziamo per evitare layout shift. */
+.newsletter-brevo .sib-loader,
+.newsletter-brevo .progress-indicator:not(.newsletter-submit .progress-indicator__icon) {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  overflow: hidden !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
+}
+
+@media (max-width: 759px) {
+  .filters { display: block; }
+  .select-row { margin-top: 10px; }
+}

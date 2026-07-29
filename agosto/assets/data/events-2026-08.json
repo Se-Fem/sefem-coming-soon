@@ -1,298 +1,981 @@
 {
   "month": "2026-08",
-  "version": "2026-07-29T14:45:00+02:00",
-  "lastUpdated": "2026-07-29T14:45:00+02:00",
-  "editorial": {
-    "title": "Mese x MeSe · Agosto",
-    "description": "Una selezione veloce degli appuntamenti che accendono il Ticino questo mese.",
-    "reelUrl": "https://www.instagram.com/sefem.ch/",
-    "cover": "assets/images/sefem-gradient.png"
-  },
+  "updatedAt": "2026-07-29T21:31:00+02:00",
   "events": [
     {
-      "id": "monte-generoso-sgaffy",
-      "slug": "sgaffy-monte-generoso",
-      "title": "Gli Sgaffy al Monte Generoso",
-      "summary": "Una serata tra musica, panorama e spettacolo a 1’704 metri.",
-      "description": "Salita in treno a cremagliera, DJ set e concerto degli Sgaffy nella cornice del Fiore di pietra.",
-      "startDate": "2026-08-22T18:30:00+02:00",
-      "endDate": "2026-08-22T23:15:00+02:00",
-      "location": {
-        "name": "Fiore di pietra",
-        "city": "Monte Generoso",
-        "region": "Mendrisiotto"
-      },
-      "categories": [
-        "musica",
-        "experience"
-      ],
-      "image": {
-        "src": "assets/images/sefem-gradient.png",
-        "alt": "Grafica evento al Monte Generoso"
-      },
-      "organizer": {
-        "name": "Monte Generoso",
-        "instagram": "@montegeneroso"
-      },
-      "pricing": {
-        "type": "paid",
-        "label": "A pagamento"
-      },
-      "links": {
-        "official": "https://www.montegeneroso.ch/eventi",
-        "tickets": "https://www.montegeneroso.ch/eventi"
-      },
-      "editorial": {
-        "meseXMese": true,
-        "selecta": true,
-        "priority": 100
-      },
-      "status": "scheduled",
-      "published": true
-    },
-    {
-      "id": "lago-live-demo",
-      "slug": "lago-live-demo",
-      "title": "Lago Live Session",
-      "summary": "Musica dal vivo al tramonto, direttamente sul lago.",
-      "description": "Un appuntamento dimostrativo per testare card, filtri e pagina di dettaglio.",
-      "startDate": "2026-08-08T19:30:00+02:00",
-      "endDate": "2026-08-08T23:30:00+02:00",
-      "location": {
-        "name": "Lungolago",
-        "city": "Locarno",
-        "region": "Locarnese"
-      },
+      "title": "Matthew Lee",
+      "date": "2026-07-30",
+      "time": "21:30",
+      "place": "Rotonda Piazza Castello",
+      "city": "Locarno",
+      "text": "Il pianista e performer Matthew Lee porta il suo rock'n'roll travolgente alla Rotonda di Locarno.",
+      "image": "matthew-lee-rotonda-locarno.webp",
+      "url": "https://www.locarnofestival.ch/festival/experience/rotonda-by-la-mobiliare.html",
       "categories": [
         "musica",
         "concerti"
       ],
-      "image": {
-        "src": "assets/images/sefem-gradient.png",
-        "alt": "Grafica dimostrativa Lago Live Session"
-      },
-      "organizer": {
-        "name": "Evento demo",
-        "instagram": ""
-      },
-      "pricing": {
-        "type": "free",
-        "label": "Ingresso gratuito"
-      },
-      "links": {
-        "official": "",
-        "tickets": ""
-      },
-      "editorial": {
-        "meseXMese": true,
-        "selecta": false,
-        "priority": 80
-      },
-      "status": "scheduled",
-      "published": true
+      "free": true,
+      "featured": false,
+      "endTime": "23:00",
+      "cta": "Scopri di più"
     },
     {
-      "id": "street-food-demo",
-      "slug": "street-food-demo",
-      "title": "Street Food Weekend",
-      "summary": "Sapori, musica e atmosfera estiva per tutta la famiglia.",
-      "description": "Evento dimostrativo pensato per verificare categorie multiple e filtro Famiglie.",
-      "startDate": "2026-08-14T17:00:00+02:00",
-      "endDate": "2026-08-16T23:00:00+02:00",
-      "location": {
-        "name": "Piazza del Sole",
-        "city": "Bellinzona",
-        "region": "Bellinzonese"
-      },
+      "title": "Andrea Cerrato",
+      "date": "2026-08-04",
+      "time": "21:30",
+      "place": "Rotonda Piazza Castello",
+      "city": "Locarno",
+      "text": "Andrea Cerrato arriva alla Rotonda di Locarno con il suo live tra musica e storytelling.",
+      "image": "andrea-cerrato-rotonda-locarno.webp",
+      "url": "https://www.locarnofestival.ch/festival/experience/rotonda-by-la-mobiliare.html",
       "categories": [
+        "musica",
+        "concerti"
+      ],
+      "free": true,
+      "featured": false,
+      "endTime": "23:00",
+      "cta": "Scopri di più"
+    },
+    {
+      "title": "Roy Paci & Aretuska",
+      "date": "2026-07-31",
+      "time": "21:30",
+      "place": "Rotonda Piazza Castello",
+      "city": "Locarno",
+      "text": "Roy Paci & Aretuska portano alla Rotonda il loro travolgente sound ska, jazz e latino.",
+      "image": "roy-paci-aretuska-rotonda-locarno.webp",
+      "url": "https://www.locarnofestival.ch/festival/experience/rotonda-by-la-mobiliare.html",
+      "categories": [
+        "musica",
+        "concerti"
+      ],
+      "free": true,
+      "featured": true,
+      "endTime": "23:00",
+      "cta": "Scopri di più"
+    },
+    {
+      "title": "Merk & Kremont",
+      "date": "2026-08-01",
+      "time": "21:30",
+      "place": "Rotonda Piazza Castello",
+      "city": "Locarno",
+      "text": "Il celebre duo italiano porta alla Rotonda una notte di dance ed elettronica tutta da vivere.",
+      "image": "merk-and-kremont-rotonda-locarno.webp",
+      "url": "https://www.locarnofestival.ch/festival/experience/rotonda-by-la-mobiliare.html",
+      "categories": [
+        "musica",
+        "serate"
+      ],
+      "free": true,
+      "featured": true,
+      "endTime": "23:30",
+      "cta": "Scopri di più"
+    },
+    {
+      "title": "Veronica Fusaro",
+      "date": "2026-08-07",
+      "time": "21:30",
+      "place": "Rotonda Piazza Castello",
+      "city": "Locarno",
+      "text": "La cantautrice italo-svizzera Veronica Fusaro arriva alla Rotonda con il suo raffinato pop internazionale.",
+      "image": "veronica-fusaro-rotonda-locarno.webp",
+      "url": "https://www.locarnofestival.ch/festival/experience/rotonda-by-la-mobiliare.html",
+      "categories": [
+        "musica",
+        "concerti"
+      ],
+      "free": true,
+      "featured": false,
+      "endTime": "23:00",
+      "cta": "Scopri di più"
+    },
+    {
+      "title": "Ditonellapiaga",
+      "date": "2026-08-03",
+      "time": "21:30",
+      "place": "Rotonda Piazza Castello",
+      "city": "Locarno",
+      "text": "Ditonellapiaga arriva alla Rotonda con il suo pop elettronico e uno show tutto da vivere.",
+      "image": "ditonellapiaga-rotonda-locarno.webp",
+      "url": "https://www.locarnofestival.ch/festival/experience/rotonda-by-la-mobiliare.html",
+      "categories": [
+        "musica",
+        "concerti"
+      ],
+      "free": true,
+      "featured": true,
+      "endTime": "23:00",
+      "cta": "Scopri di più"
+    },
+    {
+      "title": "Enrico Ruggeri",
+      "date": "2026-08-06",
+      "time": "21:30",
+      "place": "Rotonda Piazza Castello",
+      "city": "Locarno",
+      "text": "Enrico Ruggeri porta alla Rotonda un concerto tra grandi successi e cantautorato italiano.",
+      "image": "enrico-ruggeri-rotonda-locarno.webp",
+      "url": "https://www.locarnofestival.ch/festival/experience/rotonda-by-la-mobiliare.html",
+      "categories": [
+        "musica",
+        "concerti"
+      ],
+      "free": true,
+      "featured": true,
+      "endTime": "23:00",
+      "cta": "Scopri di più"
+    },
+    {
+      "title": "Lagoon Punk Rock Fest 2026",
+      "date": "2026-08-14",
+      "time": "16:00",
+      "place": "Parco Ciani",
+      "city": "Lugano",
+      "text": "Due giorni di punk rock, street food, market e concerti gratuiti nel cuore di Lugano.",
+      "image": "lagoon-punk-rock-fest-2026.webp",
+      "url": "https://www.punkrocklagoon.ch",
+      "categories": [
+        "musica",
+        "festival"
+      ],
+      "free": true,
+      "featured": false,
+      "endDate": "2026-08-15",
+      "endTime": "23:59",
+      "cta": "Scopri di più"
+    },
+    {
+      "title": "M¥SS KETA – In The K-Hole DJ Set",
+      "date": "2026-08-21",
+      "time": "21:00",
+      "place": "Boschetto Ciani",
+      "city": "Lugano",
+      "text": "M¥SS KETA arriva a Lugano con il suo esclusivo «In The K-Hole DJ Set».",
+      "image": "myss-keta-soleggiata-sound-2026.webp",
+      "url": "https://www.soleggiatasound.ch/",
+      "categories": [
+        "musica",
+        "serate"
+      ],
+      "free": false,
+      "featured": true,
+      "endDate": "2026-08-22",
+      "endTime": "02:00",
+      "cta": "Scopri di più"
+    },
+    {
+      "title": "Camoufly",
+      "date": "2026-08-21",
+      "time": "21:00",
+      "place": "Boschetto Ciani",
+      "city": "Lugano",
+      "text": "Il producer Camoufly porta a Lugano il suo sound elettronico innovativo per una serata al Soleggiata Sound.",
+      "image": "camoufly-soleggiata-sound-2026.webp",
+      "url": "https://www.soleggiatasound.ch/",
+      "categories": [
+        "musica",
+        "serate"
+      ],
+      "free": false,
+      "featured": false,
+      "endDate": "2026-08-22",
+      "endTime": "02:00",
+      "cta": "Scopri di più"
+    },
+    {
+      "title": "ELASI",
+      "date": "2026-08-22",
+      "time": "21:00",
+      "place": "Boschetto Ciani",
+      "city": "Lugano",
+      "text": "ELASI porta al Soleggiata Sound il suo originale mix di elettronica, pop e sonorità dal mondo.",
+      "image": "elasi-soleggiata-sound-2026.webp",
+      "url": "",
+      "categories": [
+        "musica",
+        "concerti"
+      ],
+      "free": false,
+      "featured": false,
+      "endDate": "2026-08-23",
+      "endTime": "02:00"
+    },
+    {
+      "title": "Disse",
+      "date": "2026-08-22",
+      "time": "21:00",
+      "place": "Boschetto Ciani",
+      "city": "Lugano",
+      "text": "Disse porta al Soleggiata Sound un DJ set tra hip-hop, jazz ed elettronica.",
+      "image": "disse-soleggiata-sound-2026.webp",
+      "url": "",
+      "categories": [
+        "musica",
+        "serate"
+      ],
+      "free": false,
+      "featured": false,
+      "endDate": "2026-08-23",
+      "endTime": "02:00"
+    },
+    {
+      "title": "Gli Sgaffy",
+      "date": "2026-08-22",
+      "time": "17:50",
+      "place": "Fiore di Pietra, Monte Generoso",
+      "city": "Capolago",
+      "text": "Gli Sgaffy arrivano in vetta al Monte Generoso per una serata tra musica e panorami mozzafiato.",
+      "image": "gli-sgaffy-monte-generoso-2026.webp",
+      "url": "https://www.montegeneroso.ch/it/sgaffy-treno-1750",
+      "categories": [
+        "musica",
+        "concerti",
+        "experience"
+      ],
+      "free": false,
+      "featured": true,
+      "endTime": "23:30",
+      "cta": "Biglietti"
+    },
+    {
+      "title": "MATILDE",
+      "date": "2026-08-29",
+      "time": "19:00",
+      "place": "Cave di Arzo",
+      "city": "Arzo",
+      "text": "La cantautrice ticinese MATILDE apre la serata del Cavea Festival con il suo indie pop.",
+      "image": "matilde-cavea-festival-2026.webp",
+      "url": "https://biglietteria.ch",
+      "categories": [
+        "musica",
+        "concerti"
+      ],
+      "free": false,
+      "featured": false,
+      "endTime": "20:00",
+      "cta": "Biglietti"
+    },
+    {
+      "title": "Patagarri",
+      "date": "2026-08-29",
+      "time": "21:00",
+      "place": "Cave di Arzo",
+      "city": "Arzo",
+      "text": "I Patagarri arrivano al Cavea Festival con un live travolgente tra jazz, swing e sonorità balcaniche.",
+      "image": "patagarri-cavea-festival-2026.webp",
+      "url": "https://biglietteria.ch",
+      "categories": [
+        "musica",
+        "concerti"
+      ],
+      "free": false,
+      "featured": true,
+      "endTime": "22:30",
+      "cta": "Biglietti"
+    },
+    {
+      "title": "DJ MAMIPAPI",
+      "date": "2026-08-29",
+      "time": "22:30",
+      "place": "Cave di Arzo",
+      "city": "Arzo",
+      "text": "Il duo ticinese DJ MAMIPAPI chiude il sabato del Cavea Festival con un DJ set tra latin e reggaeton.",
+      "image": "dj-mamipapi-cavea-festival-2026.webp",
+      "url": "https://biglietteria.ch",
+      "categories": [
+        "musica",
+        "serate"
+      ],
+      "free": false,
+      "featured": false,
+      "endDate": "2026-08-30",
+      "endTime": "01:00",
+      "cta": "Biglietti"
+    },
+    {
+      "title": "Ma che ne sanno i 2000? w/ Sonohra",
+      "date": "2026-08-01",
+      "time": "17:00",
+      "place": "Agno Open Air Festival",
+      "city": "Agno",
+      "text": "La festa che riporta ai migliori anni 2000 con special guest i Sonohra e ingresso gratuito.",
+      "image": "ma-che-ne-sanno-2000-agno.webp",
+      "url": "",
+      "cta": "",
+      "categories": [
+        "musica",
+        "serate"
+      ],
+      "free": true,
+      "featured": true
+    },
+    {
+      "title": "Dance Party",
+      "date": "2026-07-31",
+      "time": "20:30",
+      "place": "Agno Open Air Festival",
+      "city": "Agno",
+      "text": "Si parte con il weekend dell'Agno Open Air Festival: una notte di dance con Paolo Noise, DJ Renée La Bulgara e tanti altri ospiti.",
+      "image": "dance-party-agno-open-air.webp",
+      "url": "",
+      "cta": "",
+      "categories": [
+        "musica",
+        "serate"
+      ],
+      "free": false,
+      "featured": true
+    },
+    {
+      "title": "Samba Fest 2026",
+      "date": "2026-08-07",
+      "endDate": "2026-08-08",
+      "time": "17:00",
+      "place": "Parco Ciani",
+      "city": "Lugano",
+      "text": "Due giorni tra samba, capoeira, musica dal vivo, DJ set, street food e mercatino per vivere tutta l'energia del Brasile.",
+      "image": "samba-fest-2026.webp",
+      "url": "https://kikaevents.ch/",
+      "cta": "Scopri il programma",
+      "categories": [
+        "musica",
+        "festival",
+        "food-drink"
+      ],
+      "free": true,
+      "featured": false
+    },
+    {
+      "title": "Oblivion Open Air",
+      "date": "2026-08-15",
+      "time": "12:00",
+      "place": "Cascina Bellunesi",
+      "city": "Ponte Capriasca",
+      "text": "Una giornata tra techno, psy trance e natura con quattro palchi tematici, food, area family e un'esperienza immersiva all'aria aperta.",
+      "image": "oblivion-open-air-2026.webp",
+      "url": "https://eventfrog.ch/en/p/parties/house-techno/oblivion-open-air-15-08-2026-7476646262336453972.html",
+      "cta": "Biglietti",
+      "categories": [
+        "musica",
+        "festival",
+        "serate"
+      ],
+      "free": false,
+      "featured": false
+    },
+    {
+      "title": "Nostran Air 2026",
+      "date": "2026-07-31",
+      "endDate": "2026-08-01",
+      "time": "18:00",
+      "endTime": "01:00",
+      "place": "Prato delle scuole di Sessa",
+      "city": "Sessa",
+      "text": "Due giornate tra concerti, DJ set, mercatino, gastronomia, attività per famiglie e voli panoramici in elicottero nel cuore del Malcantone.",
+      "image": "nostran-air-2026.webp",
+      "url": "",
+      "cta": "Scopri il programma",
+      "categories": [
+        "musica",
+        "festival",
+        "tradizione",
+        "famiglie"
+      ],
+      "free": true,
+      "featured": false
+    },
+    {
+      "title": "Porte aperte agli scavi paleontologici sul Monte San Giorgio",
+      "date": "2026-07-31",
+      "endDate": "2026-08-01",
+      "place": "Monte San Giorgio",
+      "city": "Meride",
+      "text": "Due giornate per visitare un'area di scavo normalmente chiusa al pubblico, osservare il lavoro dei paleontologi e scoprire i fossili del Monte San Giorgio.",
+      "image": "porte-aperte-scavi-paleontologici-monte-san-giorgio.webp",
+      "url": "https://www.museodeifossili.ch/",
+      "cta": "Prenota la visita",
+      "categories": [
+        "natura",
+        "famiglie"
+      ],
+      "free": true
+    },
+    {
+      "title": "Nicole & Martin, more than Theatre",
+      "date": "2026-07-31",
+      "endDate": "2026-08-02",
+      "place": "Tenda Bianca - Albergo Losone",
+      "city": "Losone",
+      "text": "Tre giorni di spettacoli fiabeschi che uniscono teatro, musica e arti circensi sotto il tradizionale tendone bianco. Un'esperienza pensata per bambini, famiglie e adulti.",
+      "image": "nicole-martin-more-than-theatre.webp",
+      "url": "https://www.nicole-et-martin.ch/",
+      "cta": "Prenota",
+      "categories": [
+        "teatro",
+        "famiglie",
+        "cultura"
+      ],
+      "free": false
+    },
+    {
+      "title": "Milonga in Rivetta Tell",
+      "date": "2026-07-31",
+      "time": "21:00",
+      "endTime": "01:00",
+      "place": "Rivetta G. Tell",
+      "city": "Lugano",
+      "text": "Una serata di tango argentino all'aperto sulle rive del Ceresio, aperta a ballerini esperti e a chi desidera vivere l'atmosfera della milonga.",
+      "image": "milonga-rivetta-tell.webp",
+      "url": "https://amitango.ch/organizzatore/la-casa-del-tango/",
+      "cta": "Maggiori informazioni",
+      "categories": [
+        "musica",
+        "danza"
+      ],
+      "free": true
+    },
+    {
+      "title": "Lüina on fire",
+      "date": "2026-08-01",
+      "time": "16:00",
+      "endTime": "23:45",
+      "place": "Lüina",
+      "city": "Airolo",
+      "text": "Festeggia il 1° agosto tra aperitivo, cena, specialità ticinesi e spettacolo pirotecnico nella suggestiva cornice di Lüina.",
+      "image": "luina-on-fire.webp",
+      "url": "https://www.airolo.ch/it/luina_summer_time__luina_on_fire-airolo.jsp",
+      "cta": "Prenota",
+      "categories": [
+        "tradizione",
         "food-drink",
         "famiglie"
       ],
-      "image": {
-        "src": "assets/images/sefem-gradient.png",
-        "alt": "Grafica dimostrativa Street Food Weekend"
-      },
-      "organizer": {
-        "name": "Evento demo",
-        "instagram": ""
-      },
-      "pricing": {
-        "type": "free",
-        "label": "Accesso libero"
-      },
-      "links": {
-        "official": "",
-        "tickets": ""
-      },
-      "editorial": {
-        "meseXMese": false,
-        "selecta": true,
-        "priority": 70
-      },
-      "status": "scheduled",
-      "published": true
+      "free": false
     },
     {
-      "id": "cinema-aperto-demo",
-      "slug": "cinema-aperto-demo",
-      "title": "Cinema sotto le stelle",
-      "summary": "Un grande schermo, una piazza e una sera d’estate.",
-      "description": "Evento dimostrativo per la categoria Cultura e spettacoli.",
-      "startDate": "2026-08-20T21:00:00+02:00",
-      "endDate": "2026-08-20T23:30:00+02:00",
-      "location": {
-        "name": "Parco cittadino",
-        "city": "Lugano",
-        "region": "Luganese"
-      },
+      "title": "Feste di S. Lorenzo",
+      "date": "2026-08-04",
+      "endDate": "2026-08-09",
+      "time": "19:00",
+      "endTime": "03:00",
+      "place": "Via alla Chiesa di S. Lorenzo",
+      "city": "Sobrio",
+      "text": "Sei serate tra gastronomia, musica dal vivo, street food e intrattenimento per tutta la famiglia, con il gran finale della tradizionale Sagra di San Lorenzo.",
+      "image": "feste-san-lorenzo-sobrio.webp",
+      "url": "https://www.aass.ch/",
+      "cta": "Scopri il programma",
       "categories": [
-        "cultura-spettacoli"
+        "festival",
+        "tradizione",
+        "musica",
+        "food-drink",
+        "famiglie"
       ],
-      "image": {
-        "src": "assets/images/sefem-gradient.png",
-        "alt": "Grafica dimostrativa Cinema sotto le stelle"
-      },
-      "organizer": {
-        "name": "Evento demo",
-        "instagram": ""
-      },
-      "pricing": {
-        "type": "paid",
-        "label": "Da CHF 10"
-      },
-      "links": {
-        "official": "",
-        "tickets": ""
-      },
-      "editorial": {
-        "meseXMese": false,
-        "selecta": false,
-        "priority": 0
-      },
-      "status": "scheduled",
-      "published": true
+      "free": false
     },
     {
-      "id": "notte-electro-demo",
-      "slug": "notte-electro-demo",
-      "title": "Notte Electro",
-      "summary": "DJ set e visual fino a tardi.",
-      "description": "Evento dimostrativo per testare il filtro Serate.",
-      "startDate": "2026-08-28T23:00:00+02:00",
-      "endDate": "2026-08-29T04:00:00+02:00",
-      "location": {
-        "name": "Club Demo",
-        "city": "Lugano",
-        "region": "Luganese"
-      },
+      "title": "Locarno Film Festival 2026",
+      "date": "2026-08-05",
+      "endDate": "2026-08-15",
+      "place": "Piazza Grande",
+      "city": "Locarno",
+      "text": "Undici giorni di grande cinema con proiezioni in Piazza Grande, anteprime internazionali, ospiti, incontri ed eventi che trasformano Locarno nella capitale del cinema.",
+      "image": "locarno-film-festival-2026.webp",
+      "url": "https://www.locarnofestival.ch/",
+      "cta": "Programma e biglietti",
       "categories": [
-        "serate",
+        "cinema",
+        "festival",
+        "cultura"
+      ],
+      "free": false
+    },
+    {
+      "title": "Accademia Teatro Dimitri – La Grinta",
+      "date": "2026-08-05",
+      "endDate": "2026-08-07",
+      "time": "20:00",
+      "endTime": "21:00",
+      "place": "Teatro Dimitri",
+      "city": "Verscio",
+      "text": "Uno spettacolo di teatro fisico contemporaneo che esplora il significato della resilienza attraverso un linguaggio visivo tra realtà e surreale, con musica dal vivo.",
+      "image": "accademia-teatro-dimitri.webp",
+      "url": "https://www.teatrodimitri.ch/programma",
+      "cta": "Biglietti",
+      "categories": [
+        "teatro",
+        "cultura"
+      ],
+      "free": false
+    },
+    {
+      "title": "Meride Ritmo",
+      "date": "2026-08-07",
+      "endDate": "2026-08-08",
+      "time": "16:30",
+      "place": "Piazza Mastri",
+      "city": "Meride",
+      "text": "Due serate nel borgo di Meride tra musica dal vivo, concerti, gastronomia, attività per bambini e un'atmosfera di festa ai piedi del Monte San Giorgio.",
+      "image": "meride-ritmo.webp",
+      "url": "https://www.museodeifossili.ch/",
+      "cta": "Scopri il programma",
+      "categories": [
+        "musica",
+        "festival",
+        "tradizione",
+        "food-drink",
+        "famiglie"
+      ],
+      "free": true
+    },
+    {
+      "title": "Verzasca Country Festival",
+      "date": "2026-08-08",
+      "time": "11:00",
+      "endTime": "01:30",
+      "place": "Centro sportivo",
+      "city": "Sonogno",
+      "text": "Una giornata in perfetto stile Wild West tra musica country, line dance, bancarelle, grigliate, spettacoli e attività per tutta la famiglia nella suggestiva cornice della Valle Verzasca.",
+      "image": "verzasca-country-festival-2026.webp",
+      "url": "https://www.verzascacountryfestival.ch/",
+      "cta": "Scopri il programma",
+      "categories": [
+        "musica",
+        "festival",
+        "famiglie",
+        "food-drink"
+      ],
+      "free": true
+    },
+    {
+      "title": "Ascona Clarinet Orchestra in Concerto!",
+      "date": "2026-08-08",
+      "time": "20:30",
+      "place": "Chiesa di San Nicolao",
+      "city": "Giornico",
+      "text": "Il concerto conclusivo dell'Ascona Clarinet Orchestra, diretta dal clarinettista e compositore Marco Santilli, propone un viaggio musicale attraverso epoche e stili con un ensemble di clarinetti provenienti da tutta la Svizzera.",
+      "image": "ascona-clarinet-orchestra-giornico.webp",
+      "url": "https://www.asconaclarinetorchestra.ch/",
+      "cta": "Maggiori informazioni",
+      "categories": [
+        "musica",
+        "concerti",
+        "cultura"
+      ],
+      "free": true
+    },
+    {
+      "title": "Campionato Ticinese di lancio del sasso",
+      "date": "2026-08-08",
+      "time": "15:30",
+      "endTime": "18:30",
+      "place": "Tiz Arena",
+      "city": "Ascona",
+      "text": "Scopri una delle discipline più tradizionali della Svizzera assistendo al Campionato Ticinese di lancio del sasso «Unspunnen», dove i partecipanti si sfidano mettendo alla prova forza e tecnica.",
+      "image": "campionato-ticinese-lancio-del-sasso.webp",
+      "url": "https://www.ticino.ch/it/events/details/14-campionato-ticinese-lancio-del-sasso/10350.html",
+      "cta": "Maggiori informazioni",
+      "categories": [
+        "sport",
+        "tradizione"
+      ],
+      "free": true
+    },
+    {
+      "title": "Concerto di musica da camera",
+      "date": "2026-08-08",
+      "time": "17:00",
+      "endTime": "18:30",
+      "place": "Chiesa di San Bartolomeo",
+      "city": "Indemini",
+      "text": "Un concerto di musica da camera per clarinetto e quartetto d'archi con musiche di Carl Maria von Weber e Antonín Dvořák, nella suggestiva cornice della Chiesa di San Bartolomeo.",
+      "image": "concerto-musica-da-camera-indemini.webp",
+      "url": "https://www.ticino.ch/it/events/details/Concerto-di-musica-da-camera/10006509.html",
+      "cta": "Maggiori informazioni",
+      "categories": [
+        "concerti",
+        "musica",
+        "cultura"
+      ],
+      "free": true
+    },
+    {
+      "title": "Fly & Grill Ambrì 2026",
+      "date": "2026-08-08",
+      "time": "08:00",
+      "endTime": "16:00",
+      "place": "Aerodromo",
+      "city": "Ambrì",
+      "text": "Una giornata dedicata all'aviazione tra aerei storici e moderni, voli panoramici in elicottero, esposizioni, food truck, grigliata e attività per tutta la famiglia.",
+      "image": "fly-grill-ambri-2026.webp",
+      "url": "https://www.flyandgrill.ch/",
+      "cta": "Scopri il programma",
+      "categories": [
+        "sport",
+        "famiglie",
+        "food-drink"
+      ],
+      "free": true
+    },
+    {
+      "title": "Sagra di San Lorenzo",
+      "date": "2026-08-09",
+      "endDate": "2026-08-10",
+      "time": "18:30",
+      "endTime": "02:00",
+      "place": "Piazzale Palazzo Patriziale",
+      "city": "Lodano",
+      "text": "Una tradizionale festa di paese tra risotto e luganighe a offerta libera, musica dal vivo, lotteria e bar aperto fino a tarda notte.",
+      "image": "sagra-san-lorenzo-lodano.webp",
+      "url": "https://www.ticino.ch/it/events/details/Sagra-di-San-Lorenzo-Lodano/10007016.html",
+      "cta": "Maggiori informazioni",
+      "categories": [
+        "tradizione",
+        "food-drink",
         "musica"
       ],
-      "image": {
-        "src": "assets/images/sefem-gradient.png",
-        "alt": "Grafica dimostrativa Notte Electro"
-      },
-      "organizer": {
-        "name": "Evento demo",
-        "instagram": ""
-      },
-      "pricing": {
-        "type": "paid",
-        "label": "A pagamento"
-      },
-      "links": {
-        "official": "",
-        "tickets": ""
-      },
-      "editorial": {
-        "meseXMese": false,
-        "selecta": false,
-        "priority": 0
-      },
-      "status": "scheduled",
-      "published": true
+      "free": true
     },
     {
-      "id": "notte-electro-demo-2",
-      "slug": "notte-electro-demo-2",
-      "title": "Notte Electro 2",
-      "summary": "DJ set e visual fino a tardi.",
-      "description": "Evento dimostrativo per testare il filtro Serate.",
-      "startDate": "2026-08-28T23:00:00+02:00",
-      "endDate": "2026-08-29T04:00:00+02:00",
-      "location": {
-        "name": "Club Demo",
-        "city": "Lugano",
-        "region": "Luganese"
-      },
+      "title": "Concerto della notte delle stelle cadenti",
+      "date": "2026-08-10",
+      "time": "20:30",
+      "endTime": "23:00",
+      "place": "Pian Carignago - Colle San Marco",
+      "city": "Ronco sopra Ascona",
+      "text": "Una serata sotto il cielo di San Lorenzo con Chiara Dubey e Tatiana Pedrotti tra voce, violino, arpa celtica e sonorità elettroniche in una cornice naturale suggestiva.",
+      "image": "concerto-notte-stelle-cadenti.webp",
+      "url": "https://www.ronco-s-ascona.ch/",
+      "cta": "Maggiori informazioni",
       "categories": [
-        "serate",
-        "musica"
+        "concerti",
+        "musica",
+        "natura"
       ],
-      "image": {
-        "src": "assets/images/sefem-gradient.png",
-        "alt": "Grafica dimostrativa Notte Electro"
-      },
-      "organizer": {
-        "name": "Evento demo",
-        "instagram": ""
-      },
-      "pricing": {
-        "type": "paid",
-        "label": "A pagamento"
-      },
-      "links": {
-        "official": "",
-        "tickets": ""
-      },
-      "editorial": {
-        "meseXMese": false,
-        "selecta": false,
-        "priority": 0
-      },
-      "status": "scheduled",
-      "published": true
+      "free": true
     },
     {
-      "id": "evento-concluso-demo",
-      "slug": "evento-concluso-demo",
-      "title": "Evento concluso demo",
-      "summary": "Evento dimostrativo già terminato per verificare il filtro Conclusi.",
-      "description": "Questo evento serve esclusivamente a verificare il comportamento della lista e del dettaglio per gli appuntamenti già terminati.",
-      "startDate": "2026-07-20T18:00:00+02:00",
-      "endDate": "2026-07-20T23:00:00+02:00",
-      "location": {
-        "name": "Piazza Demo",
-        "city": "Lugano",
-        "region": "Luganese"
-      },
+      "title": "Mükka Band",
+      "date": "2026-08-11",
+      "time": "20:00",
+      "endTime": "21:15",
+      "place": "Teatro Dimitri",
+      "city": "Verscio",
+      "text": "Un concerto per tutte le età che unisce musica popolare svizzera, ticinese, italiana e latinoamericana con composizioni originali, in uno spettacolo ricco di ironia e contaminazioni musicali.",
+      "image": "accademia-teatro-dimitri.webp",
+      "url": "https://www.teatrodimitri.ch/it/programma",
+      "cta": "Biglietti",
       "categories": [
-        "musica"
+        "concerti",
+        "musica",
+        "cultura"
       ],
-      "image": {
-        "src": "assets/images/sefem-gradient.png",
-        "alt": "Grafica dimostrativa evento concluso"
-      },
-      "organizer": {
-        "name": "Evento demo",
-        "instagram": ""
-      },
-      "pricing": {
-        "type": "free",
-        "label": "Ingresso gratuito"
-      },
-      "links": {
-        "official": "",
-        "tickets": ""
-      },
-      "editorial": {
-        "meseXMese": false,
-        "selecta": false,
-        "priority": 0
-      },
-      "status": "scheduled",
-      "published": true
+      "free": false
+    },
+    {
+      "title": "Cinema al Museo: Napoli – New York",
+      "date": "2026-08-12",
+      "time": "21:15",
+      "endTime": "23:30",
+      "place": "Palazzo dei Landfogti",
+      "city": "Lottigna",
+      "text": "Vivi la magia del cinema all'aperto con la proiezione di \"Napoli – New York\" di Gabriele Salvatores nella suggestiva cornice del Museo storico etnografico della Valle di Blenio.",
+      "image": "cinema-al-museo-napoli-new-york.webp",
+      "url": "https://www.museovallediblenio.ch/",
+      "cta": "Maggiori informazioni",
+      "categories": [
+        "cinema",
+        "cultura"
+      ],
+      "free": false
+    },
+    {
+      "title": "Festa Capanna Quarnei",
+      "date": "2026-08-15",
+      "time": "10:30",
+      "endTime": "18:00",
+      "place": "Capanna Quarnei",
+      "city": "Malvaglia",
+      "text": "Una giornata tra montagna, tradizioni e convivialità con Santa Messa, polenta e prodotti locali, musica dal vivo, caccia al tesoro per bambini e voli panoramici in elicottero.",
+      "image": "festa-capanna-quarnei.webp",
+      "url": "https://quarnei.ch/",
+      "cta": "Scopri il programma",
+      "categories": [
+        "tradizione",
+        "montagna",
+        "food-drink",
+        "famiglie"
+      ],
+      "free": true
+    },
+    {
+      "title": "Film per famiglie in Piazza Grande",
+      "date": "2026-08-16",
+      "time": "21:00",
+      "place": "Piazza Grande",
+      "city": "Locarno",
+      "text": "Vivi la magia del Locarno Film Festival con una proiezione serale in Piazza Grande pensata per tutta la famiglia, sul grande schermo simbolo del Festival.",
+      "image": "film-famiglie-piazza-grande-2026.webp",
+      "url": "https://www.ggl.ch/",
+      "cta": "Maggiori informazioni",
+      "categories": [
+        "cinema",
+        "famiglie",
+        "cultura"
+      ],
+      "free": false
+    },
+    {
+      "title": "Gli impavidi Bretoni",
+      "date": "2026-08-16",
+      "time": "21:00",
+      "place": "Bagno spiaggia",
+      "city": "Gerra (Gambarogno)",
+      "text": "Uno spettacolo di teatro di figura tra comicità slapstick, musica bretone ed effetti sonori dal vivo, dove una semplice perdita d'acqua dà vita a un'avventura surreale per tutta la famiglia.",
+      "image": "gli-impavidi-bretoni.webp",
+      "url": "https://www.teatro-fauni.ch/",
+      "cta": "Maggiori informazioni",
+      "categories": [
+        "teatro",
+        "famiglie",
+        "cultura"
+      ],
+      "free": true
+    },
+    {
+      "title": "Cinema al Parco",
+      "date": "2026-08-18",
+      "endDate": "2026-08-20",
+      "time": "20:45",
+      "place": "Parco di Orselina",
+      "city": "Orselina",
+      "text": "Tre serate di cinema all'aperto per tutta la famiglia con cortometraggi realizzati dagli studenti del CISA e proiezioni sotto le stelle in un suggestivo anfiteatro naturale.",
+      "image": "cinema-al-parco-orselina.webp",
+      "url": "https://www.pro-orselina.ch/",
+      "cta": "Scopri il programma",
+      "categories": [
+        "cinema",
+        "festival",
+        "famiglie",
+        "cultura"
+      ],
+      "free": true
+    },
+    {
+      "title": "Il bosco in valigia",
+      "date": "2026-08-19",
+      "time": "21:00",
+      "place": "Lungolago",
+      "city": "Muralto",
+      "text": "Uno spettacolo di teatro di figura che trasporta grandi e piccoli in un bosco incantato popolato da creature fantastiche, tra narrazione, musica e poesia.",
+      "image": "il-bosco-in-valigia.webp",
+      "url": "https://www.teatro-fauni.ch/",
+      "cta": "Maggiori informazioni",
+      "categories": [
+        "teatro",
+        "famiglie",
+        "cultura"
+      ],
+      "free": true
+    },
+    {
+      "title": "Lugano Piano",
+      "date": "2026-08-21",
+      "endDate": "2026-08-23",
+      "time": "20:15",
+      "place": "Centro città",
+      "city": "Lugano",
+      "text": "Oltre 70 concerti di pianoforte tra musica classica, jazz e contaminazioni trasformano cortili, piazze e luoghi simbolo di Lugano in un grande palcoscenico a cielo aperto.",
+      "image": "lugano-piano-2026.webp",
+      "url": "https://www.luganopiano.ch/",
+      "cta": "Scopri il programma",
+      "categories": [
+        "musica",
+        "festival",
+        "cultura"
+      ],
+      "free": true
+    },
+    {
+      "title": "OML – Concerto per Pubblico e Orchestra",
+      "date": "2026-08-21",
+      "time": "20:30",
+      "endTime": "21:30",
+      "place": "Piazza Emigranti",
+      "city": "Lamone",
+      "text": "Un concerto coinvolgente dove il pubblico diventa protagonista, cantando celebri canzoni accompagnato dall'Orchestra Mandolinistica di Lugano in una serata dedicata ai compositori ticinesi.",
+      "image": "oml-concerto-pubblico-orchestra-lamone.webp",
+      "url": "https://oml.ch/",
+      "cta": "Maggiori informazioni",
+      "categories": [
+        "concerti",
+        "musica",
+        "cultura"
+      ],
+      "free": true
+    },
+    {
+      "title": "Sombras de cine (Ombre del cinema)",
+      "date": "2026-08-21",
+      "time": "21:00",
+      "endTime": "22:00",
+      "place": "Lungolago Portigon",
+      "city": "Minusio",
+      "text": "Uno spettacolo di teatro di figura ispirato al grande cinema, dove ombre, musica e poesia danno vita a un viaggio emozionante pensato per spettatori di tutte le età.",
+      "image": "sombras-de-cine.webp",
+      "url": "https://www.teatro-fauni.ch/",
+      "cta": "Maggiori informazioni",
+      "categories": [
+        "teatro",
+        "famiglie",
+        "cultura"
+      ],
+      "free": true
+    },
+    {
+      "title": "Open Air Riviera",
+      "date": "2026-08-21",
+      "endDate": "2026-08-22",
+      "time": "18:00",
+      "endTime": "03:00",
+      "place": "Campo sportivo",
+      "city": "Lodrino",
+      "text": "Due serate di musica live e DJ set all'aperto, con area food & drink e tornei sportivi per un weekend di festa aperto a tutte le età.",
+      "image": "open-air-riviera-2026.webp",
+      "url": "https://www.openair-riviera.ch/",
+      "cta": "Scopri il programma",
+      "categories": [
+        "musica",
+        "festival",
+        "food-drink"
+      ],
+      "free": true
+    },
+    {
+      "title": "La Belvedere",
+      "date": "2026-08-22",
+      "endDate": "2026-08-23",
+      "time": "07:00",
+      "endTime": "18:00",
+      "place": "Osteria Vignetta",
+      "city": "Mendrisio",
+      "text": "Due giornate dedicate al ciclismo con percorsi su strada e sterrato tra i paesaggi del Mendrisiotto, aperte a ciclisti professionisti, amatori e appassionati.",
+      "image": "la-belvedere-2026.webp",
+      "url": "https://www.labelvedere.org/",
+      "cta": "Iscriviti",
+      "categories": [
+        "sport",
+        "ciclismo"
+      ],
+      "free": false
+    },
+    {
+      "title": "Ascona Rock Night",
+      "date": "2026-08-22",
+      "time": "17:30",
+      "place": "Borgo e Lungolago",
+      "city": "Ascona",
+      "text": "Le vie e le piazze di Ascona si trasformano in un grande palcoscenico a cielo aperto con concerti rock dal vivo, musica e un'atmosfera tutta da vivere.",
+      "image": "ascona-rock-night-2026.webp",
+      "url": "https://www.amascona.ch/",
+      "cta": "Scopri il programma",
+      "categories": [
+        "musica",
+        "concerti",
+        "festival"
+      ],
+      "free": true
+    },
+    {
+      "title": "Handbike Challenge Giro Tremola",
+      "date": "2026-08-22",
+      "time": "08:30",
+      "endTime": "15:00",
+      "place": "Piazza Motta",
+      "city": "Airolo",
+      "text": "Una sfida inclusiva lungo la leggendaria strada della Tremola, dove persone con disabilità motoria affrontano i 13 km che conducono al Passo del San Gottardo in uno scenario alpino unico.",
+      "image": "handbike-challenge-giro-tremola.webp",
+      "url": "https://giro-tremola.ch/",
+      "cta": "Iscriviti",
+      "categories": [
+        "sport",
+        "ciclismo"
+      ],
+      "free": false
+    },
+    {
+      "title": "Il gatto con gli stivali",
+      "date": "2026-08-22",
+      "time": "21:00",
+      "place": "Cortile delle scuole",
+      "city": "Contone",
+      "text": "La celebre fiaba prende vita in uno spettacolo di teatro di figura che unisce attori e marionette, regalando una serata di magia, comicità e fantasia per tutta la famiglia.",
+      "image": "il-gatto-con-gli-stivali.webp",
+      "url": "https://www.teatro-fauni.ch/",
+      "cta": "Maggiori informazioni",
+      "categories": [
+        "teatro",
+        "famiglie",
+        "cultura"
+      ],
+      "free": true
+    },
+    {
+      "title": "Guggen Summer Never Ends",
+      "date": "2026-08-22",
+      "time": "10:00",
+      "endTime": "04:00",
+      "place": "Centro sportivo Fantin",
+      "city": "Giornico",
+      "text": "Il carnevale ticinese torna anche d'estate con Guggen, musica, DJ set, street food e un'atmosfera di festa tra coriandoli, maschere e divertimento fino a tarda notte.",
+      "image": "guggen-summer-never-ends.webp",
+      "url": "https://www.ticino.ch/it/events/details/Guggen-Summer-Never-Ends---Il-Carnevale-ticinese-continua...anche-d-esetate!/10007940.html",
+      "cta": "Scopri il programma",
+      "categories": [
+        "musica",
+        "tradizione",
+        "festival",
+        "food-drink"
+      ],
+      "free": true
+    },
+    {
+      "title": "La Splendida",
+      "date": "2026-08-23",
+      "time": "10:00",
+      "endTime": "23:00",
+      "place": "Lungolago",
+      "city": "Lugano",
+      "text": "Il lungolago di Lugano ospita una grande mostra mercato con oltre 200 espositori tra artigianato, prodotti tipici, gastronomia, benessere e curiosità da scoprire in una giornata per tutta la famiglia.",
+      "image": "la-splendida-2026.webp",
+      "url": "https://lasplendida.ch/",
+      "cta": "Maggiori informazioni",
+      "categories": [
+        "mercatini",
+        "food-drink",
+        "famiglie"
+      ],
+      "free": true
+    },
+    {
+      "title": "Storie da Mangiare",
+      "date": "2026-08-23",
+      "time": "18:00",
+      "place": "Lungolago Portigon",
+      "city": "Minusio",
+      "text": "Due cuoche trasformano ingredienti e utensili da cucina in personaggi di fiabe, dando vita a uno spettacolo di teatro di figura, narrazione e teatro d'ombre per tutta la famiglia.",
+      "image": "storie-da-mangiare.webp",
+      "url": "https://www.teatro-fauni.ch/",
+      "cta": "Maggiori informazioni",
+      "categories": [
+        "teatro",
+        "famiglie",
+        "cultura"
+      ],
+      "free": true
     }
   ]
 }

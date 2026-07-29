@@ -1,0 +1,298 @@
+{
+  "month": "2026-08",
+  "version": "2026-07-29T14:45:00+02:00",
+  "lastUpdated": "2026-07-29T14:45:00+02:00",
+  "editorial": {
+    "title": "Mese x MeSe · Agosto",
+    "description": "Una selezione veloce degli appuntamenti che accendono il Ticino questo mese.",
+    "reelUrl": "https://www.instagram.com/sefem.ch/",
+    "cover": "assets/images/sefem-gradient.png"
+  },
+  "events": [
+    {
+      "id": "monte-generoso-sgaffy",
+      "slug": "sgaffy-monte-generoso",
+      "title": "Gli Sgaffy al Monte Generoso",
+      "summary": "Una serata tra musica, panorama e spettacolo a 1’704 metri.",
+      "description": "Salita in treno a cremagliera, DJ set e concerto degli Sgaffy nella cornice del Fiore di pietra.",
+      "startDate": "2026-08-22T18:30:00+02:00",
+      "endDate": "2026-08-22T23:15:00+02:00",
+      "location": {
+        "name": "Fiore di pietra",
+        "city": "Monte Generoso",
+        "region": "Mendrisiotto"
+      },
+      "categories": [
+        "musica",
+        "experience"
+      ],
+      "image": {
+        "src": "assets/images/sefem-gradient.png",
+        "alt": "Grafica evento al Monte Generoso"
+      },
+      "organizer": {
+        "name": "Monte Generoso",
+        "instagram": "@montegeneroso"
+      },
+      "pricing": {
+        "type": "paid",
+        "label": "A pagamento"
+      },
+      "links": {
+        "official": "https://www.montegeneroso.ch/eventi",
+        "tickets": "https://www.montegeneroso.ch/eventi"
+      },
+      "editorial": {
+        "meseXMese": true,
+        "selecta": true,
+        "priority": 100
+      },
+      "status": "scheduled",
+      "published": true
+    },
+    {
+      "id": "lago-live-demo",
+      "slug": "lago-live-demo",
+      "title": "Lago Live Session",
+      "summary": "Musica dal vivo al tramonto, direttamente sul lago.",
+      "description": "Un appuntamento dimostrativo per testare card, filtri e pagina di dettaglio.",
+      "startDate": "2026-08-08T19:30:00+02:00",
+      "endDate": "2026-08-08T23:30:00+02:00",
+      "location": {
+        "name": "Lungolago",
+        "city": "Locarno",
+        "region": "Locarnese"
+      },
+      "categories": [
+        "musica",
+        "concerti"
+      ],
+      "image": {
+        "src": "assets/images/sefem-gradient.png",
+        "alt": "Grafica dimostrativa Lago Live Session"
+      },
+      "organizer": {
+        "name": "Evento demo",
+        "instagram": ""
+      },
+      "pricing": {
+        "type": "free",
+        "label": "Ingresso gratuito"
+      },
+      "links": {
+        "official": "",
+        "tickets": ""
+      },
+      "editorial": {
+        "meseXMese": true,
+        "selecta": false,
+        "priority": 80
+      },
+      "status": "scheduled",
+      "published": true
+    },
+    {
+      "id": "street-food-demo",
+      "slug": "street-food-demo",
+      "title": "Street Food Weekend",
+      "summary": "Sapori, musica e atmosfera estiva per tutta la famiglia.",
+      "description": "Evento dimostrativo pensato per verificare categorie multiple e filtro Famiglie.",
+      "startDate": "2026-08-14T17:00:00+02:00",
+      "endDate": "2026-08-16T23:00:00+02:00",
+      "location": {
+        "name": "Piazza del Sole",
+        "city": "Bellinzona",
+        "region": "Bellinzonese"
+      },
+      "categories": [
+        "food-drink",
+        "famiglie"
+      ],
+      "image": {
+        "src": "assets/images/sefem-gradient.png",
+        "alt": "Grafica dimostrativa Street Food Weekend"
+      },
+      "organizer": {
+        "name": "Evento demo",
+        "instagram": ""
+      },
+      "pricing": {
+        "type": "free",
+        "label": "Accesso libero"
+      },
+      "links": {
+        "official": "",
+        "tickets": ""
+      },
+      "editorial": {
+        "meseXMese": false,
+        "selecta": true,
+        "priority": 70
+      },
+      "status": "scheduled",
+      "published": true
+    },
+    {
+      "id": "cinema-aperto-demo",
+      "slug": "cinema-aperto-demo",
+      "title": "Cinema sotto le stelle",
+      "summary": "Un grande schermo, una piazza e una sera d’estate.",
+      "description": "Evento dimostrativo per la categoria Cultura e spettacoli.",
+      "startDate": "2026-08-20T21:00:00+02:00",
+      "endDate": "2026-08-20T23:30:00+02:00",
+      "location": {
+        "name": "Parco cittadino",
+        "city": "Lugano",
+        "region": "Luganese"
+      },
+      "categories": [
+        "cultura-spettacoli"
+      ],
+      "image": {
+        "src": "assets/images/sefem-gradient.png",
+        "alt": "Grafica dimostrativa Cinema sotto le stelle"
+      },
+      "organizer": {
+        "name": "Evento demo",
+        "instagram": ""
+      },
+      "pricing": {
+        "type": "paid",
+        "label": "Da CHF 10"
+      },
+      "links": {
+        "official": "",
+        "tickets": ""
+      },
+      "editorial": {
+        "meseXMese": false,
+        "selecta": false,
+        "priority": 0
+      },
+      "status": "scheduled",
+      "published": true
+    },
+    {
+      "id": "notte-electro-demo",
+      "slug": "notte-electro-demo",
+      "title": "Notte Electro",
+      "summary": "DJ set e visual fino a tardi.",
+      "description": "Evento dimostrativo per testare il filtro Serate.",
+      "startDate": "2026-08-28T23:00:00+02:00",
+      "endDate": "2026-08-29T04:00:00+02:00",
+      "location": {
+        "name": "Club Demo",
+        "city": "Lugano",
+        "region": "Luganese"
+      },
+      "categories": [
+        "serate",
+        "musica"
+      ],
+      "image": {
+        "src": "assets/images/sefem-gradient.png",
+        "alt": "Grafica dimostrativa Notte Electro"
+      },
+      "organizer": {
+        "name": "Evento demo",
+        "instagram": ""
+      },
+      "pricing": {
+        "type": "paid",
+        "label": "A pagamento"
+      },
+      "links": {
+        "official": "",
+        "tickets": ""
+      },
+      "editorial": {
+        "meseXMese": false,
+        "selecta": false,
+        "priority": 0
+      },
+      "status": "scheduled",
+      "published": true
+    },
+    {
+      "id": "notte-electro-demo-2",
+      "slug": "notte-electro-demo-2",
+      "title": "Notte Electro 2",
+      "summary": "DJ set e visual fino a tardi.",
+      "description": "Evento dimostrativo per testare il filtro Serate.",
+      "startDate": "2026-08-28T23:00:00+02:00",
+      "endDate": "2026-08-29T04:00:00+02:00",
+      "location": {
+        "name": "Club Demo",
+        "city": "Lugano",
+        "region": "Luganese"
+      },
+      "categories": [
+        "serate",
+        "musica"
+      ],
+      "image": {
+        "src": "assets/images/sefem-gradient.png",
+        "alt": "Grafica dimostrativa Notte Electro"
+      },
+      "organizer": {
+        "name": "Evento demo",
+        "instagram": ""
+      },
+      "pricing": {
+        "type": "paid",
+        "label": "A pagamento"
+      },
+      "links": {
+        "official": "",
+        "tickets": ""
+      },
+      "editorial": {
+        "meseXMese": false,
+        "selecta": false,
+        "priority": 0
+      },
+      "status": "scheduled",
+      "published": true
+    },
+    {
+      "id": "evento-concluso-demo",
+      "slug": "evento-concluso-demo",
+      "title": "Evento concluso demo",
+      "summary": "Evento dimostrativo già terminato per verificare il filtro Conclusi.",
+      "description": "Questo evento serve esclusivamente a verificare il comportamento della lista e del dettaglio per gli appuntamenti già terminati.",
+      "startDate": "2026-07-20T18:00:00+02:00",
+      "endDate": "2026-07-20T23:00:00+02:00",
+      "location": {
+        "name": "Piazza Demo",
+        "city": "Lugano",
+        "region": "Luganese"
+      },
+      "categories": [
+        "musica"
+      ],
+      "image": {
+        "src": "assets/images/sefem-gradient.png",
+        "alt": "Grafica dimostrativa evento concluso"
+      },
+      "organizer": {
+        "name": "Evento demo",
+        "instagram": ""
+      },
+      "pricing": {
+        "type": "free",
+        "label": "Ingresso gratuito"
+      },
+      "links": {
+        "official": "",
+        "tickets": ""
+      },
+      "editorial": {
+        "meseXMese": false,
+        "selecta": false,
+        "priority": 0
+      },
+      "status": "scheduled",
+      "published": true
+    }
+  ]
+}
